@@ -1,0 +1,237 @@
+Simulator report for MIC1
+Mon Dec 01 18:10:06 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.4 us       ;
+; Simulation Netlist Size     ; 52 nodes     ;
+; Simulation Coverage         ;      55.77 % ;
+; Total Number of Transitions ; 108          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5T144C6  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                              ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                               ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                 ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                  ;               ;
+; Vector input source                                                                        ; C:/Users/João Antônio/Desktop/MIC1/mpc_generator.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                   ; On            ;
+; Check outputs                                                                              ; Off                                                  ; Off           ;
+; Report simulation coverage                                                                 ; On                                                   ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                   ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                   ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                   ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                  ; Off           ;
+; Detect glitches                                                                            ; Off                                                  ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                  ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                  ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                  ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                  ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                   ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                           ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                  ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                  ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                 ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      55.77 % ;
+; Total nodes checked                                 ; 52           ;
+; Total output ports checked                          ; 52           ;
+; Total output ports with complete 1/0-value coverage ; 29           ;
+; Total output ports with no 1/0-value coverage       ; 22           ;
+; Total output ports with no 1-value coverage         ; 22           ;
+; Total output ports with no 0-value coverage         ; 23           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                           ;
++----------------------+-----------------------------+------------------+
+; Node Name            ; Output Port Name            ; Output Port Type ;
++----------------------+-----------------------------+------------------+
+; |MPC|inst3[8]        ; |MPC|inst3[8]               ; regout           ;
+; |MPC|inst3[7]        ; |MPC|inst3[7]               ; regout           ;
+; |MPC|inst3[5]        ; |MPC|inst3[5]               ; regout           ;
+; |MPC|inst3[2]        ; |MPC|inst3[2]               ; regout           ;
+; |MPC|inst3[1]        ; |MPC|inst3[1]               ; regout           ;
+; |MPC|inst3[0]        ; |MPC|inst3[0]               ; regout           ;
+; |MPC|inst2~0         ; |MPC|inst2~0                ; combout          ;
+; |MPC|inst2           ; |MPC|inst2                  ; combout          ;
+; |MPC|inst6[7]        ; |MPC|inst6[7]               ; combout          ;
+; |MPC|inst6[5]        ; |MPC|inst6[5]               ; combout          ;
+; |MPC|inst6[2]        ; |MPC|inst6[2]               ; combout          ;
+; |MPC|inst6[1]        ; |MPC|inst6[1]               ; combout          ;
+; |MPC|inst6[0]        ; |MPC|inst6[0]               ; combout          ;
+; |MPC|MPC[8]          ; |MPC|MPC[8]                 ; padio            ;
+; |MPC|MPC[7]          ; |MPC|MPC[7]                 ; padio            ;
+; |MPC|MPC[5]          ; |MPC|MPC[5]                 ; padio            ;
+; |MPC|MPC[2]          ; |MPC|MPC[2]                 ; padio            ;
+; |MPC|MPC[1]          ; |MPC|MPC[1]                 ; padio            ;
+; |MPC|MPC[0]          ; |MPC|MPC[0]                 ; padio            ;
+; |MPC|NEXT_ADDRESS[8] ; |MPC|NEXT_ADDRESS[8]~corein ; combout          ;
+; |MPC|JAM[0]          ; |MPC|JAM[0]~corein          ; combout          ;
+; |MPC|JAM[1]          ; |MPC|JAM[1]~corein          ; combout          ;
+; |MPC|N               ; |MPC|N~corein               ; combout          ;
+; |MPC|Z               ; |MPC|Z~corein               ; combout          ;
+; |MPC|CLOCK           ; |MPC|CLOCK~corein           ; combout          ;
+; |MPC|JAM[2]          ; |MPC|JAM[2]~corein          ; combout          ;
+; |MPC|NEXT_ADDRESS[1] ; |MPC|NEXT_ADDRESS[1]~corein ; combout          ;
+; |MPC|NEXT_ADDRESS[0] ; |MPC|NEXT_ADDRESS[0]~corein ; combout          ;
+; |MPC|CLOCK~clkctrl   ; |MPC|CLOCK~clkctrl          ; outclk           ;
++----------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------+
+; Missing 1-Value Coverage                                              ;
++----------------------+-----------------------------+------------------+
+; Node Name            ; Output Port Name            ; Output Port Type ;
++----------------------+-----------------------------+------------------+
+; |MPC|inst3[6]        ; |MPC|inst3[6]               ; regout           ;
+; |MPC|inst3[4]        ; |MPC|inst3[4]               ; regout           ;
+; |MPC|inst3[3]        ; |MPC|inst3[3]               ; regout           ;
+; |MPC|inst6[6]        ; |MPC|inst6[6]               ; combout          ;
+; |MPC|inst6[4]        ; |MPC|inst6[4]               ; combout          ;
+; |MPC|inst6[3]        ; |MPC|inst6[3]               ; combout          ;
+; |MPC|MPC[6]          ; |MPC|MPC[6]                 ; padio            ;
+; |MPC|MPC[4]          ; |MPC|MPC[4]                 ; padio            ;
+; |MPC|MPC[3]          ; |MPC|MPC[3]                 ; padio            ;
+; |MPC|NEXT_ADDRESS[7] ; |MPC|NEXT_ADDRESS[7]~corein ; combout          ;
+; |MPC|MBR_IN[7]       ; |MPC|MBR_IN[7]~corein       ; combout          ;
+; |MPC|NEXT_ADDRESS[6] ; |MPC|NEXT_ADDRESS[6]~corein ; combout          ;
+; |MPC|MBR_IN[6]       ; |MPC|MBR_IN[6]~corein       ; combout          ;
+; |MPC|NEXT_ADDRESS[5] ; |MPC|NEXT_ADDRESS[5]~corein ; combout          ;
+; |MPC|MBR_IN[5]       ; |MPC|MBR_IN[5]~corein       ; combout          ;
+; |MPC|NEXT_ADDRESS[4] ; |MPC|NEXT_ADDRESS[4]~corein ; combout          ;
+; |MPC|MBR_IN[4]       ; |MPC|MBR_IN[4]~corein       ; combout          ;
+; |MPC|NEXT_ADDRESS[3] ; |MPC|NEXT_ADDRESS[3]~corein ; combout          ;
+; |MPC|MBR_IN[3]       ; |MPC|MBR_IN[3]~corein       ; combout          ;
+; |MPC|MBR_IN[2]       ; |MPC|MBR_IN[2]~corein       ; combout          ;
+; |MPC|MBR_IN[1]       ; |MPC|MBR_IN[1]~corein       ; combout          ;
+; |MPC|MBR_IN[0]       ; |MPC|MBR_IN[0]~corein       ; combout          ;
++----------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------+
+; Missing 0-Value Coverage                                              ;
++----------------------+-----------------------------+------------------+
+; Node Name            ; Output Port Name            ; Output Port Type ;
++----------------------+-----------------------------+------------------+
+; |MPC|inst3[6]        ; |MPC|inst3[6]               ; regout           ;
+; |MPC|inst3[4]        ; |MPC|inst3[4]               ; regout           ;
+; |MPC|inst3[3]        ; |MPC|inst3[3]               ; regout           ;
+; |MPC|inst6[6]        ; |MPC|inst6[6]               ; combout          ;
+; |MPC|inst6[4]        ; |MPC|inst6[4]               ; combout          ;
+; |MPC|inst6[3]        ; |MPC|inst6[3]               ; combout          ;
+; |MPC|MPC[6]          ; |MPC|MPC[6]                 ; padio            ;
+; |MPC|MPC[4]          ; |MPC|MPC[4]                 ; padio            ;
+; |MPC|MPC[3]          ; |MPC|MPC[3]                 ; padio            ;
+; |MPC|NEXT_ADDRESS[7] ; |MPC|NEXT_ADDRESS[7]~corein ; combout          ;
+; |MPC|MBR_IN[7]       ; |MPC|MBR_IN[7]~corein       ; combout          ;
+; |MPC|NEXT_ADDRESS[6] ; |MPC|NEXT_ADDRESS[6]~corein ; combout          ;
+; |MPC|MBR_IN[6]       ; |MPC|MBR_IN[6]~corein       ; combout          ;
+; |MPC|NEXT_ADDRESS[5] ; |MPC|NEXT_ADDRESS[5]~corein ; combout          ;
+; |MPC|MBR_IN[5]       ; |MPC|MBR_IN[5]~corein       ; combout          ;
+; |MPC|NEXT_ADDRESS[4] ; |MPC|NEXT_ADDRESS[4]~corein ; combout          ;
+; |MPC|MBR_IN[4]       ; |MPC|MBR_IN[4]~corein       ; combout          ;
+; |MPC|NEXT_ADDRESS[3] ; |MPC|NEXT_ADDRESS[3]~corein ; combout          ;
+; |MPC|MBR_IN[3]       ; |MPC|MBR_IN[3]~corein       ; combout          ;
+; |MPC|NEXT_ADDRESS[2] ; |MPC|NEXT_ADDRESS[2]~corein ; combout          ;
+; |MPC|MBR_IN[2]       ; |MPC|MBR_IN[2]~corein       ; combout          ;
+; |MPC|MBR_IN[1]       ; |MPC|MBR_IN[1]~corein       ; combout          ;
+; |MPC|MBR_IN[0]       ; |MPC|MBR_IN[0]~corein       ; combout          ;
++----------------------+-----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Dec 01 18:10:06 2025
+Info: Command: quartus_sim --simulation_results_format=VWF MIC1 -c MIC1
+Info (324025): Using vector source file "C:/Users/João Antônio/Desktop/MIC1/mpc_generator.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      55.77 %
+Info (328052): Number of transitions in simulation is 108
+Info (324045): Vector file MIC1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4472 megabytes
+    Info: Processing ended: Mon Dec 01 18:10:06 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
