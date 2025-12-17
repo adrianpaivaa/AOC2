@@ -1,0 +1,284 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 336 152 512 168)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "MBR_MEM[7..0]" (rect 5 0 84 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 760 152 948 168)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "MBRU_OUT[31..0]" (rect 90 0 182 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 760 272 939 288)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "MBR_OUT[31..0]" (rect 90 0 173 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 608 192 656 224)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16))
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 25)(pt 32 16))
+	)
+)
+(symbol
+	(rect 584 224 616 256)
+	(text "GND" (rect 6 8 16 29)(font "Arial" (font_size 6))(vertical))
+	(text "inst5" (rect -1 3 11 26)(font "Arial" )(vertical)(invisible))
+	(port
+		(pt 32 16)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 20 18 32 23)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 24 16)(pt 32 16))
+	)
+	(drawing
+		(line (pt 24 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 24))
+		(line (pt 24 8)(pt 24 24))
+	)
+	(rotate270)
+)
+(symbol
+	(rect 608 304 656 336)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst12" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16))
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 25)(pt 32 16))
+	)
+)
+(symbol
+	(rect 608 352 656 384)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst13" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16))
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 25)(pt 32 16))
+	)
+)
+(connector
+	(pt 608 208)
+	(pt 584 208)
+	(bus)
+)
+(connector
+	(pt 608 320)
+	(pt 584 320)
+	(bus)
+)
+(connector
+	(text "MBR_OUT[7..0]" (rect 664 304 741 316)(font "Arial" ))
+	(pt 736 320)
+	(pt 656 320)
+	(bus)
+)
+(connector
+	(pt 736 320)
+	(pt 736 280)
+	(bus)
+)
+(connector
+	(text "MBR_OUT[31..8]" (rect 664 352 747 364)(font "Arial" ))
+	(pt 744 368)
+	(pt 656 368)
+	(bus)
+)
+(connector
+	(pt 744 368)
+	(pt 744 280)
+	(bus)
+)
+(connector
+	(text "MBRU_OUT[7..0]" (rect 664 192 750 204)(font "Arial" ))
+	(pt 744 208)
+	(pt 656 208)
+	(bus)
+)
+(connector
+	(pt 744 208)
+	(pt 744 160)
+	(bus)
+)
+(connector
+	(text "MBR_MEM[7]" (rect 544 352 610 364)(font "Arial" ))
+	(pt 608 368)
+	(pt 536 368)
+)
+(connector
+	(pt 536 368)
+	(pt 536 160)
+)
+(connector
+	(text "MBRU_OUT[31..8]" (rect 664 224 756 236)(font "Arial" ))
+	(pt 752 240)
+	(pt 616 240)
+	(bus)
+)
+(connector
+	(pt 752 160)
+	(pt 752 240)
+	(bus)
+)
+(connector
+	(pt 584 160)
+	(pt 584 208)
+	(bus)
+)
+(connector
+	(pt 584 208)
+	(pt 584 320)
+	(bus)
+)
+(connector
+	(pt 704 280)
+	(pt 736 280)
+	(bus)
+)
+(connector
+	(pt 736 280)
+	(pt 744 280)
+	(bus)
+)
+(connector
+	(pt 744 280)
+	(pt 760 280)
+	(bus)
+)
+(connector
+	(pt 512 160)
+	(pt 536 160)
+	(bus)
+)
+(connector
+	(pt 536 160)
+	(pt 584 160)
+	(bus)
+)
+(connector
+	(pt 584 160)
+	(pt 608 160)
+	(bus)
+)
+(connector
+	(pt 720 160)
+	(pt 744 160)
+	(bus)
+)
+(connector
+	(pt 744 160)
+	(pt 752 160)
+	(bus)
+)
+(connector
+	(pt 752 160)
+	(pt 760 160)
+	(bus)
+)
+(junction (pt 584 208))
+(junction (pt 736 280))
+(junction (pt 744 280))
+(junction (pt 536 160))
+(junction (pt 584 160))
+(junction (pt 744 160))
+(junction (pt 752 160))

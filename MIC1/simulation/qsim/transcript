@@ -2,20 +2,22 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CONTROL_UNIT
+# -- Compiling module REGISTER_BANK
 # 
 # Top level modules:
-# 	CONTROL_UNIT
+# 	REGISTER_BANK
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CONTROL_UNIT_vlg_sample_tst
-# -- Compiling module CONTROL_UNIT_vlg_check_tst
-# -- Compiling module CONTROL_UNIT_vlg_vec_tst
+# -- Compiling module REGISTER_BANK_vlg_sample_tst
+# -- Compiling module REGISTER_BANK_vlg_check_tst
+# -- Compiling module REGISTER_BANK_vlg_vec_tst
 # 
 # Top level modules:
-# 	CONTROL_UNIT_vlg_vec_tst
-# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.CONTROL_UNIT_vlg_vec_tst 
-# Loading work.CONTROL_UNIT_vlg_vec_tst
-# Loading work.CONTROL_UNIT
+# 	REGISTER_BANK_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.REGISTER_BANK_vlg_vec_tst 
+# Loading work.REGISTER_BANK_vlg_vec_tst
+# Loading work.REGISTER_BANK
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading cycloneii_ver.cycloneii_lcell_comb
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
@@ -23,22 +25,15 @@
 # Loading cycloneii_ver.cycloneii_clkctrl
 # Loading cycloneii_ver.cycloneii_mux41
 # Loading cycloneii_ver.cycloneii_ena_reg
-# Loading cycloneii_ver.cycloneii_lcell_ff
-# Loading cycloneii_ver.cycloneii_lcell_comb
-# Loading cycloneii_ver.cycloneii_ram_block
-# Loading cycloneii_ver.cycloneii_ram_register
-# Loading cycloneii_ver.cycloneii_ram_pulse_generator
-# Loading work.CONTROL_UNIT_vlg_sample_tst
-# Loading work.CONTROL_UNIT_vlg_check_tst
+# Loading work.REGISTER_BANK_vlg_sample_tst
+# Loading work.REGISTER_BANK_vlg_check_tst
 # SDF 10.1d Compiler 2012.11 Nov  2 2012
 # 
 # Loading instances from MIC1_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Loading timing data from MIC1_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst File: MIC1.vt
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(480): $hold( posedge clk &&& reset:1442 ps, d:1479 ps, 234 ps );
-#    Time: 1479 ps  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst/i1/\inst1|altsyncram_component|auto_generated|ram_block1a18 /addr_a_register
+#    Time: 0 ps  Iteration: 0  Instance: /REGISTER_BANK_vlg_vec_tst File: MIC1.vt
 # Simulation passed !
-# ** Note: $finish    : MIC1.vt(958)
-#    Time: 1400 ns  Iteration: 0  Instance: /CONTROL_UNIT_vlg_vec_tst/tb_out
+# ** Note: $finish    : MIC1.vt(2477)
+#    Time: 360 ns  Iteration: 0  Instance: /REGISTER_BANK_vlg_vec_tst/tb_out
